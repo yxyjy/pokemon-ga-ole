@@ -1,6 +1,6 @@
 # ⚡ POKEMON-GA-OLE (Terminal Edition) ⚡
 
-A retro, terminal-based RPG inspired by the **Pokémon Ga-Olé** arcade series, developed for Object-Oriented Programming Fundamentals Subject
+### A retro, terminal-based RPG inspired by the **Pokémon Ga-Olé** arcade series, developed for Object-Oriented Programming Fundamentals Subject
 ---
 
 ### Prerequisites
