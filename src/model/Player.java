@@ -6,12 +6,14 @@ import model.Pokemons.Pokemon;
 public class Player {
     private String name;
     private ArrayList<Pokemon> pokemons;
-    private int medals;
+    private int coins;
+    private ArrayList<Item> inventory;
 
     public Player(String name){
         this.name = name;
         this.pokemons = new ArrayList<>();
-        this.medals = 0;
+        this.coins = 100;
+        this.inventory = new ArrayList<>();
     }
 
     public String getName(){
@@ -30,11 +32,19 @@ public class Player {
         this.pokemons = pokemons;
     }
 
-    public int getMedals(){
-        return medals;
+    public int getCoins(){
+        return coins;
     }
 
-    public void setMedals(int medals){
-        this.medals = medals;
+    public void setCoins(int coins){
+        this.coins = coins;
+    }
+
+    public ArrayList<Item> getInventory(){
+        return inventory;
+    }
+    
+    public void setInventory(ArrayList<Item> inventory){
+        this.inventory = inventory;
     }
 }

@@ -49,6 +49,10 @@ public class Pokemon{
         this.hp = hp;
     }
 
+    public double getMaxHp(){
+        return maxHp;
+    }
+
     public boolean isFainted(){
         return fainted;
     }
@@ -97,6 +101,13 @@ public class Pokemon{
             setFainted(true);
         }
         return damage;
+    }
+
+    public void heal (double healHP){
+        this.hp += healHP;
+        if (this.hp > maxHp){
+            this.hp = maxHp;
+        }
     }
 
     // public void takeDamage(double dmg){
